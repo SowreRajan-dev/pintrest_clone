@@ -66,4 +66,42 @@
 main {
   flex: 1;
   height: 100%;
+  padding-top: 35px;
+  margin-left: 130px;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid #757677;
+  padding: 8px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.searchBox input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #313233;
+  font-size: 18px;
+  font-weight: bold;
+}
+.search {
+  background-color: #fff;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.search img {
+  width: 30px;
 }

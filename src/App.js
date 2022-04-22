@@ -40,7 +40,15 @@ function App() {
           </div>
         </div>
       </div>
-      <main></main>
+      <main>
+        <div className="searchBox">
+          <input type="text" placeholder="Search..." />
+          <div className="search">
+            <img src="/Images/searchIcon.png" alt="search-icon" />
+          </div>
+        </div>
+        <div className="mainContainer"></div>
+      </main>
     </div>
   );
 }
