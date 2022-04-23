@@ -9,6 +9,8 @@ import {
 import { useEffect } from "react";
 import "./App.css";
 import MenuContainer from "./Components/MenuContainer";
+import Pin from "./Components/Pin";
+import Data from "./data";
 
 function App() {
   useEffect(() => {
@@ -21,6 +23,7 @@ function App() {
       icon.addEventListener("click", setMenuActice);
     });
   }, []);
+
   return (
     <div className="App">
       <div className="menuContainer">
@@ -47,7 +50,18 @@ function App() {
             <img src="/Images/searchIcon.png" alt="search-icon" />
           </div>
         </div>
-        <div className="mainContainer"></div>
+        <div className="mainContainer">
+          {Data &&
+            Data.map((data) => (
+              <Pin
+                pinSize={data.size}
+                id={data.id}
+                imageSrc={data.imgSrc}
+                link={data.link}
+                name={data.name}
+              />
+            ))}
+        </div>
       </main>
     </div>
   );
